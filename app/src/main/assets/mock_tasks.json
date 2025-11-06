@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "🌞 Morning Yoga & Meditation",
+    "description": "Time: 6:30 AM – 7:15 AM\nLocation: Central Park – Green Zone\nAwaken your body and mind with sunrise yoga, calm breathing, and nature vibes. Bring your mat & water bottle!",
+    "isDone": false,
+    "priority": "MEDIUM",
+    "tags": ["wellness", "yoga", "morning"],
+    "isImportant": true,
+    "progress": 0.0,
+    "colorIndex": 0
+  },
+  {
+    "id": "2",
+    "title": "💻 Team Sync Meeting",
+    "description": "Time: 10:00 AM – 11:00 AM\nLocation: Google Meet\nWeekly sprint check-in — share updates, clear blockers, and plan the next sprint. Let’s crush it!",
+    "isDone": false,
+    "priority": "MEDIUM",
+    "tags": ["work", "meeting", "sprint"],
+    "isImportant": false,
+    "progress": 0.0,
+    "colorIndex": 1
+  },
+  {
+    "id": "3",
+    "title": "🍔 Lunch Hangout with Friends",
+    "description": "Time: 1:00 PM – 2:30 PM\nLocation: Pizza Hub – Downtown\nLaughs, stories, and unlimited cheese! Let’s refuel with good food and better company.",
+    "isDone": false,
+    "priority": "LOW",
+    "tags": ["friends", "food", "fun"],
+    "isImportant": false,
+    "progress": 0.0,
+    "colorIndex": 2
+  },
+  {
+    "id": "4",
+    "title": "🧠 Deep Study Session – Data Structures",
+    "description": "Time: 5:00 PM – 7:00 PM\nLocation: Home Office / Library\nFocus mode on! Studying AVL Trees & Tries today. No distractions — just progress!",
+    "isDone": false,
+    "priority": "HIGH",
+    "tags": ["study", "ds", "avl", "tries"],
+    "isImportant": true,
+    "progress": 0.0,
+    "colorIndex": 3
+  },
+  {
+    "id": "5",
+    "title": "🎬 Movie Night & Chill",
+    "description": "Time: 8:30 PM – 11:00 PM\nLocation: Living Room\nCozy vibes + popcorn + ‘Inception’ = perfect night! Bring your blanket and relax.",
+    "isDone": false,
+    "priority": "LOW",
+    "tags": ["movie", "chill", "home"],
+    "isImportant": false,
+    "progress": 0.0,
+    "colorIndex": 4
+  }
+]

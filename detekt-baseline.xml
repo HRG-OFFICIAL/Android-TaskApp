@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>CyclomaticComplexMethod:HomeScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun HomeScreen( viewModel: HomeViewModel = hiltViewModel(), navController: NavController? = null )</ID>
+    <ID>CyclomaticComplexMethod:SignInScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SignInScreen( onNavigateToHome: () -&gt; Unit = {}, viewModel: SignInViewModel = hiltViewModel() )</ID>
+    <ID>ForbiddenComment:GoogleSignInHelper.kt$GoogleSignInHelper$// TODO: Replace with actual web client ID</ID>
+    <ID>ForbiddenComment:ProfileViewModel.kt$ProfileViewModel$// TODO: Handle sign out error</ID>
+    <ID>ForbiddenComment:ProfileViewModel.kt$ProfileViewModel$// TODO: Implement premium status check</ID>
+    <ID>ForbiddenComment:ProfileViewModel.kt$ProfileViewModel$// TODO: Implement subscription check</ID>
+    <ID>ForbiddenComment:ProfileViewModel.kt$ProfileViewModel$// TODO: Load actual user statistics from repository</ID>
+    <ID>ForbiddenComment:SignInScreen.kt$// TODO: Add Google icon</ID>
+    <ID>FunctionNaming:AddEditScreen.kt$@Composable fun AddEditScreen(vm: AddEditViewModel = hiltViewModel(), onSaved: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun BounceClickable( onClick: () -&gt; Unit, modifier: Modifier = Modifier, enabled: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun PulseAnimation( enabled: Boolean, modifier: Modifier = Modifier, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun ScaleAndFadeVisibility( visible: Boolean, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun ShakeAnimation( trigger: Boolean, modifier: Modifier = Modifier, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun SlideInFromRight( visible: Boolean, delay: Int = 0, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:Animations.kt$@Composable fun StaggeredAnimation( visible: Boolean, index: Int, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:AppRoot.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun AppRoot()</ID>
+    <ID>FunctionNaming:AppTheme.kt$@Composable fun AppTheme( darkTheme: Boolean = isSystemInDarkTheme(), dynamicColor: Boolean = false, // Disable for consistent branding content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:CalendarScreen.kt$@Composable private fun CalendarView( selectedDate: Long, onDateSelected: (Long) -&gt; Unit, tasks: List&lt;Task&gt; )</ID>
+    <ID>FunctionNaming:CalendarScreen.kt$@Composable private fun PriorityChip(priority: TaskPriority)</ID>
+    <ID>FunctionNaming:CalendarScreen.kt$@Composable private fun TaskCard( task: Task, onTaskClick: (Task) -&gt; Unit, onTaskToggle: (Task) -&gt; Unit )</ID>
+    <ID>FunctionNaming:CalendarScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun CalendarScreen( viewModel: CalendarViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:EnhancedFAB.kt$@Composable fun EnhancedFloatingActionButtons( onAddTask: () -&gt; Unit, onVoiceInput: () -&gt; Unit = {}, showVoiceButton: Boolean = true, isExtended: Boolean = false, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EnhancedFAB.kt$@Composable fun MultiActionFAB( onAddTask: () -&gt; Unit, onVoiceInput: () -&gt; Unit, onQuickNote: () -&gt; Unit = {}, isExpanded: Boolean, onExpandedChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:EnhancedTaskItem.kt$@Composable fun CircleCheckbox( checked: Boolean, onCheckedChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier, color: Color = MaterialTheme.colorScheme.primary )</ID>
+    <ID>FunctionNaming:EnhancedTaskItem.kt$@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class) @Composable fun EnhancedTaskItem( task: Task, modifier: Modifier = Modifier, isSelected: Boolean = false, onToggleComplete: () -&gt; Unit = {}, onEdit: () -&gt; Unit = {}, onDelete: () -&gt; Unit = {}, onClick: () -&gt; Unit = {}, onLongClick: () -&gt; Unit = {}, showProgress: Boolean = true, showReminder: Boolean = true, isListView: Boolean = false )</ID>
+    <ID>FunctionNaming:FirebaseTestScreen.kt$@Composable private fun TestResultItem(result: TestResult)</ID>
+    <ID>FunctionNaming:FirebaseTestScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun FirebaseTestScreen( onNavigateBack: () -&gt; Unit = {}, viewModel: FirebaseTestViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:HomeScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun HomeScreen( viewModel: HomeViewModel = hiltViewModel(), navController: NavController? = null )</ID>
+    <ID>FunctionNaming:LoadingButton.kt$@Composable fun LoadingButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.buttonColors(), elevation: ButtonElevation? = ButtonDefaults.buttonElevation(), border: BorderStroke? = null, contentPadding: PaddingValues = ButtonDefaults.ContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>FunctionNaming:LoadingButton.kt$@Composable fun LoadingOutlinedButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.outlinedButtonColors(), elevation: ButtonElevation? = null, border: BorderStroke? = ButtonDefaults.outlinedButtonBorder, contentPadding: PaddingValues = ButtonDefaults.ContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>FunctionNaming:LoadingButton.kt$@Composable fun LoadingTextButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.textButtonColors(), elevation: ButtonElevation? = null, border: BorderStroke? = null, contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>FunctionNaming:LoadingIconButton.kt$@Composable fun LoadingFilledIconButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.filledIconButtonColors(), icon: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:LoadingIconButton.kt$@Composable fun LoadingIconButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.iconButtonColors(), icon: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:LoadingIconButton.kt$@Composable fun LoadingOutlinedIconButton( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.outlinedIconButtonColors(), border: BorderStroke? = IconButtonDefaults.outlinedIconButtonBorder(enabled = enabled &amp;&amp; !isLoading), icon: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun BenefitsSection()</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun FeatureRow( feature: PremiumFeature, isPremium: Boolean )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun PremiumFeatures( features: List&lt;PremiumFeature&gt;, isPremium: Boolean )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun PremiumHeader()</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun SubscribeButton( isPremium: Boolean, isLoading: Boolean, onSubscribe: () -&gt; Unit, onManageSubscription: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun SubscriptionPlanCard( plan: SubscriptionPlan, isSelected: Boolean, onSelect: () -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@Composable private fun SubscriptionPlans( plans: List&lt;SubscriptionPlan&gt;, selectedPlan: SubscriptionPlan?, onPlanSelected: (SubscriptionPlan) -&gt; Unit )</ID>
+    <ID>FunctionNaming:PremiumScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun PremiumScreen( viewModel: PremiumViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ActionsSection( onSignOut: () -&gt; Unit, onDeleteAccount: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun ProfileHeader(user: User?)</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun SettingRow( setting: SettingItem, onClick: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun SettingsSection( settings: List&lt;SettingItem&gt;, onSettingClick: (SettingItem) -&gt; Unit )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun StatItem( title: String, value: String, icon: ImageVector )</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun StatisticsSection(statistics: UserStatistics)</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@Composable private fun SubscriptionCard(subscription: SubscriptionType?)</ID>
+    <ID>FunctionNaming:ProfileScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ProfileScreen( viewModel: ProfileViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:SearchAndFilter.kt$@Composable fun FilterChipGroup( selectedFilter: String, onFilterChange: (String) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SearchAndFilter.kt$@Composable fun LayoutToggle( isGrid: Boolean, onLayoutChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SearchAndFilter.kt$@Composable fun LinearProgressStatus( progress: Float, text: String, modifier: Modifier = Modifier, trackColor: Color = MaterialTheme.colorScheme.surfaceVariant, progressColor: Color = MaterialTheme.colorScheme.primary, height: androidx.compose.ui.unit.Dp = 24.dp )</ID>
+    <ID>FunctionNaming:SearchAndFilter.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SearchAndFilterHeader( searchQuery: String, onSearchQueryChange: (String) -&gt; Unit, completedTasks: Int, totalTasks: Int, selectedFilter: String, onFilterChange: (String) -&gt; Unit, onProgressClick: () -&gt; Unit = {}, isGrid: Boolean = false, onLayoutChange: (Boolean) -&gt; Unit = {}, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:SignInScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SignInScreen( onNavigateToHome: () -&gt; Unit = {}, viewModel: SignInViewModel = hiltViewModel() )</ID>
+    <ID>FunctionNaming:StatisticsCards.kt$@Composable fun CircularProgressCard( title: String, progress: Float, color: Color, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatisticsCards.kt$@Composable fun StatCard( title: String, value: Int, total: Int? = null, color: Color, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatisticsCards.kt$@Composable fun StatisticsOverviewCards( totalTasks: Int, completedTasks: Int, pendingTasks: Int, importantTasks: Int, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatisticsCards.kt$@Composable fun WeeklyProgressChart( weeklyData: List&lt;Int&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun Insights(insights: List&lt;String&gt;)</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun OverviewCards(statistics: TaskStatistics)</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun ProductivityChart(statistics: TaskStatistics)</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun RecentActivity(dailyStats: List&lt;DailyStats&gt;)</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun StatCard( title: String, value: String, icon: ImageVector, color: Color, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@Composable private fun TaskBreakdown(statistics: TaskStatistics)</ID>
+    <ID>FunctionNaming:StatsScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun StatsScreen( viewModel: StatsViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:AppRoot.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun AppRoot()</ID>
+    <ID>LongMethod:EnhancedFAB.kt$@Composable fun MultiActionFAB( onAddTask: () -&gt; Unit, onVoiceInput: () -&gt; Unit, onQuickNote: () -&gt; Unit = {}, isExpanded: Boolean, onExpandedChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongMethod:EnhancedTaskItem.kt$@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class) @Composable fun EnhancedTaskItem( task: Task, modifier: Modifier = Modifier, isSelected: Boolean = false, onToggleComplete: () -&gt; Unit = {}, onEdit: () -&gt; Unit = {}, onDelete: () -&gt; Unit = {}, onClick: () -&gt; Unit = {}, onLongClick: () -&gt; Unit = {}, showProgress: Boolean = true, showReminder: Boolean = true, isListView: Boolean = false )</ID>
+    <ID>LongMethod:FirebaseTestScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun FirebaseTestScreen( onNavigateBack: () -&gt; Unit = {}, viewModel: FirebaseTestViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:HomeScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun HomeScreen( viewModel: HomeViewModel = hiltViewModel(), navController: NavController? = null )</ID>
+    <ID>LongMethod:ProfileScreen.kt$@Composable private fun ProfileHeader(user: User?)</ID>
+    <ID>LongMethod:SignInScreen.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SignInScreen( onNavigateToHome: () -&gt; Unit = {}, viewModel: SignInViewModel = hiltViewModel() )</ID>
+    <ID>LongMethod:StatisticsCards.kt$@Composable fun WeeklyProgressChart( weeklyData: List&lt;Int&gt;, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:EnhancedFAB.kt$( onAddTask: () -&gt; Unit, onVoiceInput: () -&gt; Unit, onQuickNote: () -&gt; Unit = {}, isExpanded: Boolean, onExpandedChange: (Boolean) -&gt; Unit, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:EnhancedTaskItem.kt$( task: Task, modifier: Modifier = Modifier, isSelected: Boolean = false, onToggleComplete: () -&gt; Unit = {}, onEdit: () -&gt; Unit = {}, onDelete: () -&gt; Unit = {}, onClick: () -&gt; Unit = {}, onLongClick: () -&gt; Unit = {}, showProgress: Boolean = true, showReminder: Boolean = true, isListView: Boolean = false )</ID>
+    <ID>LongParameterList:LoadingButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.buttonColors(), elevation: ButtonElevation? = ButtonDefaults.buttonElevation(), border: BorderStroke? = null, contentPadding: PaddingValues = ButtonDefaults.ContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>LongParameterList:LoadingButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.outlinedButtonColors(), elevation: ButtonElevation? = null, border: BorderStroke? = ButtonDefaults.outlinedButtonBorder, contentPadding: PaddingValues = ButtonDefaults.ContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>LongParameterList:LoadingButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: ButtonColors = ButtonDefaults.textButtonColors(), elevation: ButtonElevation? = null, border: BorderStroke? = null, contentPadding: PaddingValues = ButtonDefaults.TextButtonContentPadding, content: @Composable RowScope.() -&gt; Unit )</ID>
+    <ID>LongParameterList:LoadingIconButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.filledIconButtonColors(), icon: @Composable () -&gt; Unit )</ID>
+    <ID>LongParameterList:LoadingIconButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.iconButtonColors(), icon: @Composable () -&gt; Unit )</ID>
+    <ID>LongParameterList:LoadingIconButton.kt$( onClick: () -&gt; Unit, modifier: Modifier = Modifier, isLoading: Boolean = false, enabled: Boolean = true, colors: IconButtonColors = IconButtonDefaults.outlinedIconButtonColors(), border: BorderStroke? = IconButtonDefaults.outlinedIconButtonBorder(enabled = enabled &amp;&amp; !isLoading), icon: @Composable () -&gt; Unit )</ID>
+    <ID>LongParameterList:SearchAndFilter.kt$( progress: Float, text: String, modifier: Modifier = Modifier, trackColor: Color = MaterialTheme.colorScheme.surfaceVariant, progressColor: Color = MaterialTheme.colorScheme.primary, height: androidx.compose.ui.unit.Dp = 24.dp )</ID>
+    <ID>LongParameterList:SearchAndFilter.kt$( searchQuery: String, onSearchQueryChange: (String) -&gt; Unit, completedTasks: Int, totalTasks: Int, selectedFilter: String, onFilterChange: (String) -&gt; Unit, onProgressClick: () -&gt; Unit = {}, isGrid: Boolean = false, onLayoutChange: (Boolean) -&gt; Unit = {}, modifier: Modifier = Modifier )</ID>
+    <ID>LongParameterList:SignInViewModel.kt$SignInViewModel$( private val signInAnonymously: SignInAnonymouslyUseCase, private val signInWithEmail: SignInWithEmailUseCase, private val createAccount: CreateAccountUseCase, private val signInWithGoogle: SignInWithGoogleUseCase, private val resetPassword: ResetPasswordUseCase, private val googleSignInHelper: GoogleSignInHelper, private val upsertTask: UpsertTaskUseCase, )</ID>
+    <ID>MagicNumber:Animations.kt$100</ID>
+    <ID>MagicNumber:Animations.kt$1000</ID>
+    <ID>MagicNumber:Animations.kt$10f</ID>
+    <ID>MagicNumber:Animations.kt$150</ID>
+    <ID>MagicNumber:Animations.kt$200</ID>
+    <ID>MagicNumber:Animations.kt$250</ID>
+    <ID>MagicNumber:Animations.kt$300</ID>
+    <ID>MagicNumber:Animations.kt$400</ID>
+    <ID>MagicNumber:Animations.kt$50</ID>
+    <ID>MagicNumber:Animations.kt$5f</ID>
+    <ID>MagicNumber:CalendarScreen.kt$0xFF9C27B0</ID>
+    <ID>MagicNumber:CalendarScreen.kt$0xFFFF9800</ID>
+    <ID>MagicNumber:CalendarScreen.kt$3</ID>
+    <ID>MagicNumber:CalendarScreen.kt$7</ID>
+    <ID>MagicNumber:CalendarScreen.kt$86400000L</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF001944</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF002D6D</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF004299</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF141B2C</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF1B1B1F</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF293042</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF367EF2</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF404659</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF44464F</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF575E71</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF757780</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFF8F9099</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFAFC6FF</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFBFC6DC</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFC5C6D0</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFD9E2FF</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFDBE2F9</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFE1E2EC</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFE3E2E6</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFFEFBFF</ID>
+    <ID>MagicNumber:ColorSystem.kt$0xFFFFFFFF</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFF009688</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFF59c0e7</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFF65ba5a</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFFb07fe0</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFFe6b904</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFFea86c2</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFFf44336</ID>
+    <ID>MagicNumber:ColorSystem.kt$TaskColors$0xFFff9800</ID>
+    <ID>MagicNumber:EnhancedFAB.kt$300</ID>
+    <ID>MagicNumber:HomeViewModel.kt$HomeViewModel$5_000</ID>
+    <ID>MagicNumber:PremiumScreen.kt$0xFFFFD700</ID>
+    <ID>MagicNumber:ProfileScreen.kt$0xFFFFD700</ID>
+    <ID>MagicNumber:ProfileViewModel.kt$ProfileViewModel$5000</ID>
+    <ID>MagicNumber:SignInViewModel.kt$SignInViewModel$6</ID>
+    <ID>MagicNumber:StatsScreen.kt$0xFFFF9800</ID>
+    <ID>MagicNumber:StatsScreen.kt$10</ID>
+    <ID>MagicNumber:StatsScreen.kt$12</ID>
+    <ID>MagicNumber:StatsScreen.kt$15</ID>
+    <ID>MagicNumber:StatsScreen.kt$20</ID>
+    <ID>MagicNumber:StatsScreen.kt$40</ID>
+    <ID>MagicNumber:StatsScreen.kt$5</ID>
+    <ID>MagicNumber:StatsScreen.kt$6</ID>
+    <ID>MagicNumber:StatsScreen.kt$7</ID>
+    <ID>MagicNumber:StatsScreen.kt$8</ID>
+    <ID>MatchingDeclarationName:ColorSystem.kt$TaskColors</ID>
+    <ID>NewLineAtEndOfFile:Animations.kt$com.example.ui.components.Animations.kt</ID>
+    <ID>NewLineAtEndOfFile:CalendarViewModel.kt$com.example.ui.calendar.CalendarViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ColorSystem.kt$com.example.ui.theme.ColorSystem.kt</ID>
+    <ID>NewLineAtEndOfFile:EnhancedFAB.kt$com.example.ui.components.EnhancedFAB.kt</ID>
+    <ID>NewLineAtEndOfFile:EnhancedTaskItem.kt$com.example.ui.components.EnhancedTaskItem.kt</ID>
+    <ID>NewLineAtEndOfFile:FirebaseTestScreen.kt$com.example.ui.testing.FirebaseTestScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:FirebaseTestViewModel.kt$com.example.ui.testing.FirebaseTestViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:GoogleSignInHelper.kt$com.example.ui.auth.GoogleSignInHelper.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeScreen.kt$com.example.ui.home.HomeScreen.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeScreenLoadingTest.kt$com.example.ui.home.HomeScreenLoadingTest.kt</ID>
+    <ID>NewLineAtEndOfFile:HomeViewModelTest.kt$com.example.ui.home.HomeViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:LoadingButton.kt$com.example.ui.components.LoadingButton.kt</ID>
+    <ID>NewLineAtEndOfFile:LoadingButtonTest.kt$com.example.ui.components.LoadingButtonTest.kt</ID>
+    <ID>NewLineAtEndOfFile:LoadingComponents.kt$com.example.ui.components.LoadingComponents.kt</ID>
+    <ID>NewLineAtEndOfFile:LoadingIconButton.kt$com.example.ui.components.LoadingIconButton.kt</ID>
+    <ID>NewLineAtEndOfFile:ProfileViewModel.kt$com.example.ui.profile.ProfileViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:SearchAndFilter.kt$com.example.ui.components.SearchAndFilter.kt</ID>
+    <ID>NewLineAtEndOfFile:SignInScreenLoadingTest.kt$com.example.ui.auth.SignInScreenLoadingTest.kt</ID>
+    <ID>NewLineAtEndOfFile:SignInViewModelTest.kt$com.example.ui.auth.SignInViewModelTest.kt</ID>
+    <ID>NewLineAtEndOfFile:StatisticsCards.kt$com.example.ui.components.StatisticsCards.kt</ID>
+    <ID>NewLineAtEndOfFile:StatsViewModel.kt$com.example.ui.stats.StatsViewModel.kt</ID>
+    <ID>NewLineAtEndOfFile:ThemeConsistencyTest.kt$com.example.ui.theme.ThemeConsistencyTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Typography.kt$com.example.ui.theme.Typography.kt</ID>
+    <ID>SwallowedException:GoogleSignInHelper.kt$GoogleSignInHelper$e: ApiException</ID>
+    <ID>SwallowedException:ProfileViewModel.kt$ProfileViewModel$e: Exception</ID>
+    <ID>SwallowedException:SignInViewModel.kt$SignInViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:FirebaseTestViewModel.kt$FirebaseTestViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PremiumViewModel.kt$PremiumViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ProfileViewModel.kt$ProfileViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SignInViewModel.kt$SignInViewModel$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:StatsViewModel.kt$StatsViewModel$e: Exception</ID>
+    <ID>TooManyFunctions:SignInViewModel.kt$SignInViewModel : ViewModel</ID>
+    <ID>UnusedParameter:CalendarScreen.kt$selectedDate: Long</ID>
+    <ID>UnusedParameter:CalendarScreen.kt$tasks: List&lt;Task&gt;</ID>
+    <ID>UnusedParameter:CalendarViewModel.kt$CalendarViewModel$task: Task</ID>
+    <ID>UnusedParameter:EnhancedTaskItem.kt$isListView: Boolean = false</ID>
+    <ID>UnusedParameter:EnhancedTaskItem.kt$onDelete: () -&gt; Unit = {}</ID>
+    <ID>UnusedParameter:EnhancedTaskItem.kt$showReminder: Boolean = true</ID>
+    <ID>UnusedParameter:ProfileViewModel.kt$ProfileViewModel$setting: SettingItem</ID>
+    <ID>UnusedParameter:SignInScreen.kt$onNavigateToHome: () -&gt; Unit = {}</ID>
+    <ID>UnusedParameter:StatisticsCards.kt$color: Color</ID>
+    <ID>UnusedParameter:StatsScreen.kt$statistics: TaskStatistics</ID>
+    <ID>UnusedPrivateMember:EnhancedTaskItem.kt$private fun formatDate(timestamp: Long): String</ID>
+    <ID>UnusedPrivateMember:StatsScreen.kt$@Composable private fun OverviewCards(statistics: TaskStatistics)</ID>
+    <ID>UnusedPrivateMember:StatsScreen.kt$@Composable private fun ProductivityChart(statistics: TaskStatistics)</ID>
+    <ID>UnusedPrivateProperty:CalendarScreenTest.kt$CalendarScreenTest$val mockTasks = listOf( Task( id = 1, title = "Test Task 1", description = "Test Description 1", priority = TaskPriority.HIGH ) )</ID>
+    <ID>UnusedPrivateProperty:CalendarScreenTest.kt$CalendarScreenTest$val mockTasks = listOf( Task( id = 2, title = "Test Task 1", description = "Test Description 1", priority = TaskPriority.HIGH ) )</ID>
+    <ID>UnusedPrivateProperty:HomeScreenTest.kt$HomeScreenTest$val mockTasks = listOf( Task( id = 1, title = "Test Task 1", description = "Test Description 1", priority = TaskPriority.HIGH ), Task( id = 2, title = "Test Task 2", description = "Test Description 2", priority = TaskPriority.MEDIUM ) )</ID>
+    <ID>UnusedPrivateProperty:PremiumViewModel.kt$PremiumViewModel$private val billingManager: BillingManager</ID>
+    <ID>UnusedPrivateProperty:PremiumViewModel.kt$PremiumViewModel$private val premiumFeatureManager: PremiumFeatureManager</ID>
+    <ID>UnusedPrivateProperty:SignInViewModelTest.kt$SignInViewModelTest$private val launcher: ActivityResultLauncher&lt;IntentSenderRequest&gt; = mockk(relaxed = true)</ID>
+    <ID>WildcardImport:AddEditScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Animations.kt$import androidx.compose.animation.*</ID>
+    <ID>WildcardImport:Animations.kt$import androidx.compose.animation.core.*</ID>
+    <ID>WildcardImport:Animations.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:AppRoot.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:CalendarScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:CalendarScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:CalendarScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:CalendarScreenTest.kt$import androidx.compose.ui.test.*</ID>
+    <ID>WildcardImport:EnhancedFAB.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:EnhancedFAB.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:EnhancedFAB.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:EnhancedTaskItem.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:EnhancedTaskItem.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:EnhancedTaskItem.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:FirebaseTestScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:FirebaseTestScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:FirebaseTestScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:HomeScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:HomeScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:HomeScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:HomeScreen.kt$import com.example.ui.components.*</ID>
+    <ID>WildcardImport:HomeScreenLoadingTest.kt$import androidx.compose.ui.test.*</ID>
+    <ID>WildcardImport:HomeScreenTest.kt$import androidx.compose.ui.test.*</ID>
+    <ID>WildcardImport:LoadingButton.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:LoadingButton.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:LoadingButtonTest.kt$import androidx.compose.ui.test.*</ID>
+    <ID>WildcardImport:LoadingIconButton.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:LoadingIconButton.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:PremiumScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:PremiumScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:PremiumScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:PremiumScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:ProfileScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:ProfileScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:ProfileScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:ProfileScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:SearchAndFilter.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:SearchAndFilter.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:SearchAndFilter.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:SignInScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:SignInScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:SignInScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:SignInScreenLoadingTest.kt$import androidx.compose.ui.test.*</ID>
+    <ID>WildcardImport:StatisticsCards.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:StatisticsCards.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:StatsScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:StatsScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:StatsScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:StatsScreen.kt$import androidx.compose.runtime.*</ID>
+  </CurrentIssues>
+</SmellBaseline>

@@ -1,0 +1,78 @@
+*.iml
+.gradle/
+/.gradle-local/
+local.properties
+/local.properties
+.DS_Store
+Thumbs.db
+
+# Ignore Android Studio project files entirely
+.idea/
+.vscode/
+
+# Ignore build outputs in all modules
+/**/build/
+
+# Native/External build outputs
+.externalNativeBuild
+.cxx
+
+# Android Studio capture folder
+/captures
+
+# Kotlin local session/cache
+.kotlin/
+
+# Retain google-services.json (do not ignore)
+# app/google-services.json
+
+# Android artifacts
+*.apk
+*.aab
+*.keystore
+*.jks
+*.class
+
+# Node/JS
+node_modules/
+.npmrc
+.yarn/
+
+# Firebase CLI
+.firebase/
+firebase-debug.log
+
+# Environment files and secrets
+.env
+.env.*
+serviceAccountKey.json
+scripts/serviceAccountKey.json
+
+# Python
+__pycache__/
+.venv/
+env/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+.cache/
+/.cache/
+
+# Archives and binaries
+*.zip
+*.tar
+*.gz
+*.7z
+*.exe
+*.dll
+
+# Merge artifacts and dumps
+*.orig
+*.hprof
+
+# Datasets or large media directories (keep screenshots)
+datasets/
+media/
+!/screenshots/
