@@ -25,6 +25,8 @@ TaskApp is a modern Android application built with Jetpack Compose that helps yo
   </table>
 </div>
 
+Note: The grid uses lightweight HTML so it renders consistently on GitHub. Adjust `width` values if you want a tighter or looser look.
+
 ## Features
 - Task list with creation, editing, selection, and bulk actions
 - Priority management and breakdown (Low/Medium/High)
