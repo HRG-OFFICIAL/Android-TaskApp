@@ -43,6 +43,17 @@ jobs:
           "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$ANDROID_SDK_ROOT" "platform-tools" "platforms;android-35" "build-tools;35.0.0"
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
 
+      - name: Verify Android SDK installation
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "JAVA_HOME: $JAVA_HOME"
+          echo "ANDROID_SDK_ROOT: $ANDROID_SDK_ROOT"
+          ls -la "$ANDROID_SDK_ROOT" || true
+          ls -la "$ANDROID_SDK_ROOT/platforms" || true
+          ls -la "$ANDROID_SDK_ROOT/build-tools" || true
+          "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --list | head -n 200 || true
+
       - name: Cache Gradle
         uses: actions/cache@v4
         with:
@@ -58,11 +69,21 @@ jobs:
           echo "Kotlin version:" $(grep -Po '(?<=kotlin = ")[^\"]+' gradle/libs.versions.toml)
           echo "Compose Compiler version:" $(grep -Po '(?<=composeCompiler = ")[^\"]+' gradle/libs.versions.toml)
 
-      - name: Gradle build, unit tests, detekt
+      - name: Gradle version
         run: |
           ./gradlew --version
-          ./gradlew clean build test detekt \
-            --stacktrace --info --console=plain --no-configuration-cache
+
+      - name: Gradle evaluate (help)
+        run: |
+          ./gradlew help --stacktrace --info --console=plain --no-configuration-cache
+
+      - name: Gradle assemble
+        run: |
+          ./gradlew clean assemble --stacktrace --info --console=plain --no-configuration-cache
+
+      - name: Gradle tests and detekt
+        run: |
+          ./gradlew test detekt --stacktrace --info --console=plain --no-configuration-cache
 
       - name: Upload test and detekt reports on failure
         if: failure()
