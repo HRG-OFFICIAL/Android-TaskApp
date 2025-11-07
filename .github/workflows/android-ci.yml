@@ -61,7 +61,17 @@ jobs:
       - name: Gradle build, unit tests, detekt
         run: |
           ./gradlew --version
-          ./gradlew clean build test detekt --stacktrace
+          ./gradlew clean build test detekt \
+            --stacktrace --info --console=plain --no-configuration-cache
+
+      - name: Upload test and detekt reports on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-reports
+          path: |
+            **/build/reports/**
+            **/build/test-results/**
 
       - name: Upload build artifacts (APK)
         if: success()
