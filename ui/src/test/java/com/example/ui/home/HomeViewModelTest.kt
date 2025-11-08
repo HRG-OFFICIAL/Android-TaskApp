@@ -2,6 +2,7 @@ package com.example.ui.home
 
 import com.example.domain.model.Task
 import com.example.domain.model.TaskPriority
+import com.example.domain.usecase.ClearAllTasksUseCase
 import com.example.domain.usecase.DeleteTaskUseCase
 import com.example.domain.usecase.ObserveTasksUseCase
 import com.example.domain.usecase.SetTaskDoneUseCase
@@ -32,6 +33,7 @@ class HomeViewModelTest {
     private val upsertTask: UpsertTaskUseCase = mockk()
     private val setTaskDone: SetTaskDoneUseCase = mockk()
     private val deleteTask: DeleteTaskUseCase = mockk()
+    private val clearAllTasks: ClearAllTasksUseCase = mockk()
     
     private val testDispatcher = StandardTestDispatcher()
 
@@ -43,12 +45,14 @@ class HomeViewModelTest {
         coEvery { upsertTask(any()) } returns 1
         coEvery { setTaskDone(any(), any()) } returns Unit
         coEvery { deleteTask(any()) } returns Unit
+        coEvery { clearAllTasks() } returns Unit
 
         viewModel = HomeViewModel(
             observeTasks = observeTasks,
             upsertTask = upsertTask,
             setTaskDone = setTaskDone,
-            deleteTask = deleteTask
+            deleteTask = deleteTask,
+            clearAllTasks = clearAllTasks
         )
     }
 

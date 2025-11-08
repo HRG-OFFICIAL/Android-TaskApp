@@ -26,7 +26,7 @@ enum class TaskAction {
 }
 
 data class TaskActionState(
-    val taskId: Int,
+    val taskId: String,
     val action: TaskAction,
     val isLoading: Boolean
 )
@@ -37,7 +37,7 @@ data class HomeUiState(
     val quickAddLoading: Boolean = false,
     val errorMessage: String? = null,
 ) {
-    fun isTaskLoading(taskId: Int, action: TaskAction): Boolean {
+    fun isTaskLoading(taskId: String, action: TaskAction): Boolean {
         return taskActionStates["${taskId}_${action.name}"] ?: false
     }
     
