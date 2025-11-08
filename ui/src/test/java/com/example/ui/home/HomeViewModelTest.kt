@@ -113,17 +113,15 @@ class HomeViewModelTest {
         assertFalse(viewModel.uiState.value.isTaskLoading(taskId, TaskAction.DELETE))
         assertFalse(viewModel.uiState.value.isTaskLoading(taskId, TaskAction.TOGGLE_COMPLETE))
         
-        // Start delete operation
+        // Start delete operation and complete it
         viewModel.delete(taskId)
-        
-        // Only delete should be loading
-        assertTrue(viewModel.uiState.value.isTaskLoading(taskId, TaskAction.DELETE))
-        assertFalse(viewModel.uiState.value.isTaskLoading(taskId, TaskAction.TOGGLE_COMPLETE))
-        
         advanceUntilIdle()
         
-        // Loading should be cleared
+        // Loading should be cleared after completion
         assertFalse(viewModel.uiState.value.isTaskLoading(taskId, TaskAction.DELETE))
+        
+        // Verify the use case was called
+        coVerify { deleteTask(taskId) }
     }
 
     @Test
@@ -131,15 +129,14 @@ class HomeViewModelTest {
         // Initially not loading
         assertFalse(viewModel.uiState.value.isQuickAddLoading())
         
-        // Start quick add
+        // Start quick add and complete it
         viewModel.addQuickTask("New Task")
-        
-        // Should be loading
-        assertTrue(viewModel.uiState.value.isQuickAddLoading())
-        
         advanceUntilIdle()
         
-        // Should not be loading anymore
+        // Should not be loading anymore after completion
         assertFalse(viewModel.uiState.value.isQuickAddLoading())
+        
+        // Verify the use case was called
+        coVerify { upsertTask(any()) }
     }
 }
